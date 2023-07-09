@@ -2,6 +2,7 @@
 Ma='A'
 Mb='X'
 clear
+echo ''
 echo -n "${Ma}"
 sleep 0.1
 echo -en "\b${Mb}"
