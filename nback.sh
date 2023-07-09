@@ -18,7 +18,12 @@ do
 	echo ''
 	if read -p "$NUM before? >" line
 	then
-		COUNT=$(( "${COUNT}" + 1 ))
+		if [ "$line" == "q" ]
+		then
+			break
+		else
+			COUNT=$(( "${COUNT}" + 1 ))
+		fi
 	else 
 		break
 	fi
@@ -31,11 +36,6 @@ do
 		shuf number.txt > ${TMP}
 		ANS=$( tail -"$NUM" ${TMP} | head -1 )
 	else
-		if [ "$line" == "q" ]
-		then
-			break
-		fi
-
 		echo ":X"
 		NUM=$(( "$NUM" + 1 ))
 	fi
