@@ -6,6 +6,7 @@ shuf number.txt > ${TMP}
 ANS=$( tail -"$NUM" ${TMP} | head -1 )
 COUNT=0
 CORRECT=0
+clear
 while true
 do
 	for a in $( cat ${TMP} )
@@ -30,12 +31,14 @@ do
 
 	if [ "$ANS" == "$line" ]
 	then
+		clear
 		echo "OK"
 		CORRECT=$(( "${CORRECT}" + 1 ))
 		NUM=$( shuf -n 1 number1-5.txt )
 		shuf number.txt > ${TMP}
 		ANS=$( tail -"$NUM" ${TMP} | head -1 )
 	else
+		clear
 		echo ":X"
 		NUM=$(( "$NUM" + 1 ))
 	fi

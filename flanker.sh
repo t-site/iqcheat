@@ -4,10 +4,10 @@ ANS="<"
 A="1"
 COUNT=0
 CORRECT=0
+clear
+echo ''
 while read -N1 -p "$PP" line
 do
-	echo ''
-	echo ''
 	if [ "${line}" == "q" ]
 	then
 		break
@@ -33,11 +33,12 @@ do
 		CORRECT=$(( "${CORRECT}" + 1 ))
 		A=$( seq 1 4 | shuf -n 1 )
 		PP=$( head -"$A" flanker.txt | tail -1 )
-		echo ''
 		clear
+		echo ''
 	else
 		clear
 		echo ':X'
 	fi
 done
+echo ''
 echo "${CORRECT} in ${COUNT} correct"

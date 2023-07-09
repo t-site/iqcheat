@@ -1,11 +1,12 @@
 #!/bin/bash
 Ma='A'
 Mb='X'
+clear
 echo -n "${Ma}"
 sleep 0.1
 echo -en "\b${Mb}"
 sleep 0.1
-echo -en "\b>"
+echo -en "\b"
 ANS="l"
 COUNT=0
 CORRECT=0
