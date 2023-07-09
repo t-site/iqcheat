@@ -9,7 +9,7 @@ echo -en "\b>"
 ANS="l"
 COUNT=0
 CORRECT=0
-while read -N1 line
+while read -N1 -p ">" line
 do
 	echo ''
 	if [ "${Ma}" == "$1" ] && [ "${Mb}" == "$2" ]
@@ -31,11 +31,12 @@ do
 		sleep 0.1
 		echo -en "\b${Mb}"
 		sleep 0.1
-		echo -en "\b>"
+		clear
+		echo -en "\b"
 		echo ''
 	else
+		clear
 		echo ':X'
-		echo '>'
 	fi
 done
 echo "${CORRECT} in ${COUNT} correct"

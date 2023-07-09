@@ -34,7 +34,9 @@ do
 		A=$( seq 1 4 | shuf -n 1 )
 		PP=$( head -"$A" flanker.txt | tail -1 )
 		echo ''
+		clear
 	else
+		clear
 		echo ':X'
 	fi
 done
