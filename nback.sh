@@ -41,4 +41,5 @@ do
 	fi
 done
 rm ${TMP}
+echo ''
 echo "${CORRECT} in ${COUNT} correct"
