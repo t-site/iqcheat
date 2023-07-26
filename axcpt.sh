@@ -38,7 +38,7 @@ do
 		echo ''
 	else
 		clear
-		echo ':X'
+		echo "・_・"
 	fi
 done
 echo "${CORRECT} in ${COUNT} correct"

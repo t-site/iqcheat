@@ -39,7 +39,7 @@ do
 		PP=$( head -${A} stopsig.txt | tail -1 )
 		echo 'ok next'
 	else
-		echo ':X'
+		echo '・_・'
 	fi
 done
 echo "${CORRECT} in ${COUNT} correct"

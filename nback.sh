@@ -39,7 +39,7 @@ do
 		ANS=$( tail -"$NUM" ${TMP} | head -1 )
 	else
 		clear
-		echo ":X"
+		echo "・_・"
 		NUM=$(( "$NUM" + 1 ))
 	fi
 done

@@ -1,7 +1,7 @@
 USAGE of iqcheat scripts
 
 [OVERALL]
-	iqcheat scripts display ":X" for incorrect answer.
+	iqcheat scripts display "・_・" for incorrect answer.
 	If your answer is incorrect , they display same problem one more.
 	type q or Ctrl-D for exit.
 	before exit, they display all problems count and you correct count.
