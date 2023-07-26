@@ -1,0 +1,41 @@
+USAGE of iqcheat scripts
+
+[OVERALL]
+	iqcheat scripts display ":X" for incorrect answer.
+	If your answer is incorrect , they display same problem one more.
+	type q or Ctrl-D for exit.
+	before exit, they display all problems count and you correct count.
+	"x correct in y"
+[ axcpt.sh ]
+	axcpt.sh <answer1> <answer2>
+		answer1 as which one of charactors, {A,B,C,D}
+		answer2 as which one of charactors, {X,Y}
+
+	You find a charactor , display in 0.1 second.
+	You find another charactor , display in 0.1 second.
+	and you find prompt ">".
+	if first charactor same as answer1 , 
+		and then second charactor same as answer2 ,
+		type h.
+	another pair, type l.
+	You don't need to type Enter key.
+	Because you must define the answer yourself.
+[ flanker.sh ]
+	You find "<" or ">" charactors.
+	look only the center charator, and type it
+	Ignore anothers.
+	You don't need to type Enter key.
+
+[ nback.sh ]
+	the N-Back problem in bash.
+	You find display numbers alternatively.
+	and find last number and prompt, " n before?>"
+	You type a number, n count before displayed for the last number,
+	and type Enter for "final answer".
+
+[ stopsig.sh ]
+	You find "←" or "→" , and prompt.
+	if "←" , type "h".
+	if "→" , type "l".
+	but if you find "■" , cannot type anykey.
+	You don't need to type Enter key.
