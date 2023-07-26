@@ -18,7 +18,8 @@ do
 	then
 		ANS=""
 		PP="■"
-		read -N1 -p "${PP}" -t 3 line
+		RTIME=$( seq 1 8 | shuf -n 1 )
+		read -N1 -p "${PP}" -t "${RTIME}" line
 		echo ''
 	else
 		read -N1 -p "${PP}" line
