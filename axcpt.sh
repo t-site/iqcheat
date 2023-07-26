@@ -25,8 +25,8 @@ do
 	COUNT=$(( "${COUNT}" + 1 ))
 	if [ "$line" == "$ANS" ]
 	then
-		Ma=$( cat axcpt-M1.txt | shuf -n 1 )
-		Mb=$( cat axcpt-M2.txt | shuf -n 1 )
+		Ma=$(shuf -n 1 axcpt-M1.txt )
+		Mb=$( shuf -n 1 axcpt-M2.txt )
 		ANS="l"
 		CORRECT=$(( "${CORRECT}" + 1 ))
 		echo -n "${Ma}"
